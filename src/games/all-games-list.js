@@ -3,13 +3,13 @@ const allGames = [
         name: 'dicegame',
         id: 'game1',
         title: 'Dice Game',
-        description: 'Dice Roll Game: In order to win, you must roll your two dice higher than the sum of the clue master\'s dice roll. Click the button to play. If you win, you receive the second clue: the clue master tells you that the villain mentioned his beard was scratchy.',
+        description: 'Dice Roll: In order to win, the sum of your dice roll must be greater than the sum of the clue master\'s dice roll. You lose on ties. You have three chances to beat the pencil-thin man. Click \'Roll Dice\' to play.',
     },
     {
         name: 'crosswordpuzzle',
         id: 'game2',
         title: 'Crossword Puzzle',
-        description: 'Crossword Puzzle: The barber loves crosswords. Help him out and he said he\'ll tell you more of what he knows. In order to win, you must guess the word based on the hints given by the barber.',
+        description: 'Crossword Puzzle: The barber loves crosswords. Help him out and he might give you some info. In order to win, you must guess the correct word based on the hint given.',
     },
     {
         name: 'lockeddoor',

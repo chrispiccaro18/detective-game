@@ -5,10 +5,16 @@ import createDiceCanvas from './games/dice-game/create-dice-canvas.js';
 import createCrosswordCanvas from './games/crossword/create-crossword-canvas.js';
 import createLockdoorCanvas from './games/lock-door/create-lockdoor-canvas.js';
 import createStatusBar from './functions/create-status-bar.js';
+import muteToggle from './functions/mute/mute-toggle.js';
 
 const locationHeader = document.getElementById('location');
 const gameSection = document.getElementById('game');
 const gameOutcome = document.getElementById('game-outcome');
+
+const soundtrack = new Audio('../assets/audio/location.mp3');
+soundtrack.play();
+
+muteToggle(soundtrack);
 
 const user = loadUser();
 createStatusBar(user);

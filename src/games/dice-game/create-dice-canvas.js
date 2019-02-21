@@ -64,6 +64,9 @@ function createDiceCanvas(gameSection, currentLocation, gameOutcome, user) {
     playButton.addEventListener('click', function() {
         descriptionP.hidden = true;
 
+        const diceSound = new Audio('../../../assets/audio/dice.mp3');
+        diceSound.play();
+
         const gameResult = diceGame();
 
         playerRoll1.textContent = gameResult.playerRoll1 + ', ';

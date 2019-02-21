@@ -4,10 +4,10 @@ const test = QUnit.test;
 QUnit.module('lock door tests');
 
 test('correct guess return player wins', function(assert) {
-    const guess1 = 1;
-    const guess2 = 2;
-    const guess3 = 3;
-    const guess4 = 4;
+    const guess1 = '1';
+    const guess2 = '2';
+    const guess3 = '3';
+    const guess4 = '4';
 
     const result = checkLock(guess1, guess2, guess3, guess4);
     const expected = 'player wins';

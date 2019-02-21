@@ -2,8 +2,14 @@ import locationList from '../src/location-list.js';
 import saveUser from './functions/saveUser.js';
 import loadUser from './functions/loadUser.js';
 import createStatusBar from './functions/create-status-bar.js';
+import muteToggle from './functions/mute/mute-toggle.js';
 
 const locationLinks = document.getElementById('location-links');
+
+const soundtrack = new Audio('../assets/audio/map.mp3');
+soundtrack.play();
+
+muteToggle(soundtrack);
 
 const user = loadUser();
 createStatusBar(user);
